@@ -1,0 +1,16 @@
+{
+  "name": "universal-control-rails",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/ucr-os",
+    "apps/ucr-agent",
+    "packages/ucr-core"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:os": "npm run dev --workspace apps/ucr-os",
+    "dev:agent": "npm run dev --workspace apps/ucr-agent",
+    "lint": "npm run lint --workspaces"
+  }
+}
