@@ -1,0 +1,25 @@
+{
+  "name": "ucr-agent",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc -b",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "ucr-core": "^1.0.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.0",
+    "@types/express": "^4.17.21",
+    "@types/ws": "^8.5.10",
+    "@types/cors": "^2.8.17",
+    "@types/body-parser": "^1.19.5"
+  }
+}
